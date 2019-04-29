@@ -1,0 +1,8 @@
+@charset "ISO-8859-1";
+
+/* Just an example, testing the Thymeleaf plugin*/
+
+::selection {
+	background-color: black;
+	color: white;
+}
