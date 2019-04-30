@@ -1,8 +1,31 @@
 @charset "ISO-8859-1";
 
-/* Just an example, testing the Thymeleaf plugin*/
-
 ::selection {
 	background-color: black;
 	color: white;
+}
+
+.roseSegment{
+	position: relative;
+	background: #E95DB1;
+	width: 100%;
+	height: 768px;
+}
+
+.blueSegment{
+	position: relative;
+	background: #10E3E3;
+	width: 100%;
+	height: 768px;
+}
+
+.mainFooter {
+	width: 100%;
+	height: 1.6em;
+	text-align: center;
+	margin-top: .8em;
+}
+
+.mainFooter a {
+	margin-left: .5em;
 }
