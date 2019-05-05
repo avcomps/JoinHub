@@ -4,18 +4,18 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>JoinHub | Comparte tus códigos de referido :)</title>
-		<!--To link stylesheets and other static files we need to use Thymeleaf th:href attribute-->
-		<link rel="shortcut icon" type="image/x-icon" th:href="@{/media/favicon.ico}"/>
+		<!--To link stylesheets and other static files we need to use Thymeleaf th:href attribute. The main href att. is just for testing purposes-->
+		<link rel="shortcut icon" type="image/x-icon" th:href="@{/media/favicon.ico}" href="../static/media/favicon.ico"/>
 		<!-- Bootstrap stylesheet (minified) -->
-		<link rel="stylesheet" type="text/css" th:href="@{/bootstrap/4.3.1/css/bootstrap.min.css}">
+		<link rel="stylesheet" type="text/css" th:href="@{/bootstrap/4.3.1/css/bootstrap.min.css}" href="../static/bootstrap/4.3.1/css/bootstrap.min.css">
 		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+		<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" href="../static/css/styles.css">
 		<!-- Load Font Awesome Library from CDN -->
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="@{/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+		<script src="../static/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<!-- Content section start -->
@@ -23,12 +23,12 @@
 			<div class="row" style="background-color: rgb(255, 110, 243); height: fit-content;">
 				<div class="col-sm-6 columnSection">
 					<div class="jumbotron" style="background-color: rgba(255, 255, 255, 0); text-align: center;">
-						<img src="../media/logo_joinHub.png" alt="JoinHub" class="img-responsive" style="max-width: 75%;">
+						<img src="../static/media/logo_joinHub.png" alt="JoinHub" class="img-responsive" style="max-width: 75%;">
 						<h3>Comparte tus códigos de referido con usuarios del resto del mundo, y consigue tu recompensa :)</h3>
 					</div>
 				</div>
 				<div class="col-sm-6 columnSection">
-					how are you?
+					Hi, how are you?
 				</div>
 			</div>
 			<div class="row" style="background-color: rgb(20, 255, 255); height: fit-content;">
