@@ -3,24 +3,26 @@ package com.snaplix.joinhub.model;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class ReferralCode {
 
     private long codeID;
+
     private String codeURI;
-    private User publisher;
+    //private User publisher;
     private String title;
     private String category;
     private String description;
     private Date publicationDate;
     private Date expDate;
     private int views;
-
-    public ReferralCode(){
-
-    }
-
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public long getCodeID() {
         return this.codeID;
     }
@@ -37,6 +39,7 @@ public class ReferralCode {
         this.codeURI = codeURI;
     }
 
+    /*
     public User getPublisher() {
         return this.publisher;
     }
@@ -44,6 +47,7 @@ public class ReferralCode {
     public void setPublisher(User publisher) {
         this.publisher = publisher;
     }
+    */
 
     public String getTitle() {
         return this.title;

@@ -24,13 +24,12 @@ public class User {
 	private String password;
 	private Date birthDate;
 	private Date subscriptionDate;
+
+	@Transient
 	private Image picture;
+
 	private int numLinksShared;
 	private float balance;
-	
-	public User(){
-		
-	}
 
 	public long getID(){
 		return this.userID;
