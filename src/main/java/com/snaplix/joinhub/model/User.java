@@ -13,6 +13,11 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 	private long userID;
+
+	/* The next line defines a new column called "email" assigned to the
+	"email" variable, with the mentioned properties */
+	@Column(name = "email", nullable = false, unique = true)
+	private String email;
 	
 	private String name;
 	private String surname;
@@ -21,11 +26,7 @@ public class User {
 	private Date subscriptionDate;
 	private Image picture;
 	private int numLinksShared;
-
-	/* The next line defines a new column called "email" assigned to the
-	"email" variable, with the mentioned properties */
-	@Column(name = "email", nullable = false, unique = true)
-	private String email;
+	private float balance;
 	
 	public User(){
 		
@@ -37,6 +38,14 @@ public class User {
 
 	public void setID(long id){
 		this.userID = id;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getName(){
@@ -95,12 +104,12 @@ public class User {
 		this.numLinksShared = numLinksShared;
 	}
 
-	public String getEmail() {
-		return this.email;
+	public float getBalance() {
+		return this.balance;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setBalance(float balance) {
+		this.balance = balance;
 	}
 
 	@Override
