@@ -6,23 +6,31 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 @Entity
 public class ReferralCode {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long codeID;
 
     private String codeURI;
-    //private User publisher;
+
+    @Transient
+    private User publisher;
+
     private String title;
     private String category;
     private String description;
     private Date publicationDate;
     private Date expDate;
     private int views;
+
+    public ReferralCode(){
+        
+    }
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     public long getCodeID() {
         return this.codeID;
     }
@@ -39,7 +47,6 @@ public class ReferralCode {
         this.codeURI = codeURI;
     }
 
-    /*
     public User getPublisher() {
         return this.publisher;
     }
@@ -47,7 +54,6 @@ public class ReferralCode {
     public void setPublisher(User publisher) {
         this.publisher = publisher;
     }
-    */
 
     public String getTitle() {
         return this.title;

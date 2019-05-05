@@ -31,6 +31,10 @@ public class User {
 	private int numLinksShared;
 	private float balance;
 
+	public User(){
+		
+	}
+
 	public long getID(){
 		return this.userID;
 	}
