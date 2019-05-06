@@ -5,11 +5,21 @@
 	color: white;
 }
 
-body {
+.body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.fa {
+	display: block;
+	text-align: center;
+}
+
 .columnSection {
+	padding-top: 15%;
+	padding-bottom: 15%;
+}
+
+.columnSectionFlex {
 	padding-top: 15%;
 	padding-bottom: 15%;
 	display: flex;
@@ -17,15 +27,12 @@ body {
 	justify-content: center;
 }
 
-.button {
-	margin-right: 15px;
-}
-
 .button1 {
 	background-color: rgb(0, 214, 214);
 	color: rgb(255, 255, 255);
 	font-size: 1.5em;
 	transition: .85s ease all;
+	margin-right: 15px;
 }
 
 .button1:hover {
@@ -35,13 +42,15 @@ body {
 	transition: .35s ease all;
 }
 
-.mainFooter {
-	width: 100%;
-	height: 1.6em;
+.footerSection {
+	padding-top: .8%;
+	padding-bottom: .8%;
 	text-align: center;
-	margin-top: .8em;
 }
 
-.mainFooter a {
-	margin-left: .5em;
+.footerSection a {
+	margin-left: 25px;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: blueviolet;
 }
