@@ -5,13 +5,34 @@
 	color: white;
 }
 
-html * {
+body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .columnSection {
 	padding-top: 15%;
 	padding-bottom: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button {
+	margin-right: 15px;
+}
+
+.button1 {
+	background-color: rgb(0, 214, 214);
+	color: rgb(255, 255, 255);
+	font-size: 1.5em;
+	transition: .85s ease all;
+}
+
+.button1:hover {
+	background-color: transparent;
+	color: rgb(20, 255, 255);
+	border: .05em solid rgb(20, 255, 255);
+	transition: .35s ease all;
 }
 
 .mainFooter {
