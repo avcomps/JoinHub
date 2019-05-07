@@ -15,7 +15,7 @@
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="../static/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script th:src="@{/bootstrap/4.3.1/js/bootstrap.min.js}" src="../static/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</head>
 	<body id="page-top">
 		<!-- Navigation -->
@@ -66,7 +66,7 @@
 					</div>
 				  	<div class="col-lg-8 align-self-baseline">
 						<h3 class="text-white-75 font-weight-light mb-5"><b style="font-weight: bold;">Comparte tus códigos de referido con todo el mundo</b><br>y consigue la recompensa que estas buscando :)</h3>
-						<a class="btn btn-primary btn-xl js-scroll-trigger" >¡Empezar a compartir!</a>
+						<a class="btn btn-primary btn-xl js-scroll-trigger" th:href="@{/login}">¡Empezar a compartir!</a>
 				  	</div>
 				</div>
 			</div>
