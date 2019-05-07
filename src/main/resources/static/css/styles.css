@@ -105,8 +105,8 @@
 	--white: #fff;
 	--gray: #6c757d;
 	--gray-dark: #343a40;
-	--primary: #f4623a;
-	--secondary: #6c757d;
+	--primary: #00eeff;
+	--secondary: #ff2eaf;
 	--success: #28a745;
 	--info: #17a2b8;
 	--warning: #ffc107;
@@ -7000,13 +7000,13 @@
   }
   
   .bg-secondary {
-	background-color: #7d6c77 !important;
+	background-color: #ff2eaf !important;
   }
   
   a.bg-secondary:hover, a.bg-secondary:focus,
   button.bg-secondary:hover,
   button.bg-secondary:focus {
-	background-color: #545b62 !important;
+	background-color: #ff07a0 !important;
   }
   
   .bg-success {
@@ -10648,7 +10648,7 @@
   hr.divider {
 	max-width: 3.25rem;
 	border-width: 0.2rem;
-	border-color: #f4623a;
+	border-color: #14ffff;
   }
   
   hr.light {
