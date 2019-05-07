@@ -40,12 +40,28 @@
 				</div>
 			</div>
 		</nav>
-		<!-- Masthead -->
+		<!-- Masthead start -->
 		<header class="masthead">
+			<!-- Animated background start -->
+			<div>
+				<ul class="circles">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div >
+			<!-- Animated background end -->
 			<div class="container h-100">
 				<div class="row h-100 align-items-center justify-content-center text-center">
 					<div class="col-lg-10 align-self-end">
-						<img src="../static/media/logo_joinHub.png" alt="JoinHub" style="max-width: 75%;">
+						<img th:src="@{/media/logo_joinHub.png}" alt="JoinHub" style="max-width: 75%;">
 						<hr class="divider my-4">
 					</div>
 				  	<div class="col-lg-8 align-self-baseline">
@@ -55,7 +71,8 @@
 				</div>
 			</div>
 		</header>
-		<!-- Services Section -->
+		<!-- Masthead end -->
+		<!-- Services section start -->
 		<section class="page-section bg-primary" id="services">
 			<div class="container">
 				<h2 class="text-center mt-0">At Your Service</h2>
@@ -92,14 +109,16 @@
 				</div>
 			</div>
 		</section>
-		<!-- Call to Action Section -->
+		<!-- Services section end -->
+		<!-- Call to Action section start -->
 		<section class="page-section bg-secondary text-white">
-			  <div class="container text-center">
+			<div class="container text-center">
 				<h2 class="mb-4">Regístrate ahora y empieza a compartir ¡Es gratis!</h2>
 				<a class="btn btn-light btn-xl" th:href="@{/login}">¡Registrarme!</a>
-			  </div>
+			</div>
 		</section>
-		<!-- Contact Section -->
+		<!-- Call to Action section end -->
+		<!-- Contact section start -->
 		<section class="page-section bg-primary" id="contact">
 			  <div class="container">
 				<div class="row justify-content-center">
@@ -121,12 +140,14 @@
 				</div>
 			  </div>
 		</section>
-		<!-- Footer -->
+		<!-- Contact section end -->
+		<!-- Footer section start -->
 		<footer class="bg-white py-5">
 			<div class="container">
 				<div class="small text-center text-muted">2019 &copy; SnapLix</div>
 			</div>
 		</footer>
+		<!-- Footer section end -->
 		<!-- Bootstrap core JavaScript -->
 		<script src="vendor/jquery/jquery.min.js"></script>
 		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
